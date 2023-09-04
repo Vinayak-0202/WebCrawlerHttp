@@ -1,15 +1,12 @@
 {
-  "name": "webcrawlerhttp",
+  "name": "webcrawler",
   "version": "1.0.0",
-  "description": "Project to learn http",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "jest"
   },
   "author": "Vinayak Nikam",
-  "license": "ISC",
-  "devDependencies": {
-    "jest": "^29.6.4"
-  }
+  "license": "ISC"
 }
