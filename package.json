@@ -8,5 +8,8 @@
     "test": "jest"
   },
   "author": "Vinayak Nikam",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  }
 }
