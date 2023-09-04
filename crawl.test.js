@@ -1,9 +1,9 @@
 const { normalizeURL } = require("./crawl.js");
 const { test, expect } = require("@jest/globals");
 
-test("normalizeURL", () => {
-  const input = "";
+test("normalizeURL strip url", () => {
+  const input = "https://boot.dev/path/";
   const actual = normalizeURL(input);
-  const expected = "";
+  const expected = "boot.dev/path";
   expect(actual).toEqual(expected);
 });
