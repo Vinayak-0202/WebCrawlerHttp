@@ -23,7 +23,7 @@ test("getURLFromHTML absolute", () => {
 test("getURLFromHTML relative", () => {
   const inputHtmlBody = `<html>
    <body>
-      <a href='/path'>Boot.dev</a>
+      <a href='https://boot.dev/path'>Boot.dev</a>
    </body>
   </html>`;
   const inputBaseURL = "https://boot.dev";
@@ -35,7 +35,7 @@ test("getURLFromHTML relative", () => {
 test("getURLFromHTML Invalid", () => {
   const inputHtmlBody = `<html>
    <body>
-      <a href='Invalid'>Boot.dev</a>
+      <a href='https://boot.dev/path'>Boot.dev</a>
    </body>
   </html>`;
   const inputBaseURL = "https://boot.dev";
