@@ -1,12 +1,16 @@
+const csvWriter = require("csv-writer");
+
 function printReport(pages) {
   console.log("=====================================");
   console.log("REPORT");
   console.log("=====================================");
   const sortedPages = sortPages(pages);
+
   for (sortedPage of sortedPages) {
     const url = sortedPage[0];
     const hits = sortedPage[1];
     console.log(`Found ${hits} link to page ${url}`);
+    console.log(sortedPage);
   }
 
   console.log("=====================================");
