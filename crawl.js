@@ -1,10 +1,6 @@
 const { JSDOM } = require("jsdom");
-let count = 0;
+
 async function crawlPage(baseURL, currentURL, pages) {
-  count++;
-  if (count > 1000) {
-    return pages;
-  }
   const baseURLObj = new URL(baseURL);
   const currentURLObj = new URL(currentURL);
 
